@@ -4,14 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#E91E63"
+    android:backgroundTint="#9C27B0"
     tools:context=".ActivityMenu">
 
     <ListView
         android:id="@+id/listView"
+        style="@style/Widget.AppCompat.ListView.Menu"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@mipmap/img_1"
         android:nestedScrollingEnabled="true"
+        android:scrollbarStyle="insideInset"
         android:textColor="#673AB7"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
