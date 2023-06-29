@@ -5,10 +5,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
+import android.widget.ArrayAdapter;
 
 import com.example.ejercicio12.databinding.ActivityMainBinding;
 import com.example.ejercicio12.databinding.ActivityMenuBinding;
 
+import java.sql.Array;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -24,7 +26,7 @@ public class ActivityMenu extends AppCompatActivity {
         View view = binding.getRoot();
         setContentView(view);
 
-        List <String> listaMenu = new ArrayList<>()
+        List <String> listaMenu = new ArrayList<>();
 
             listaMenu.add("Puré de calabacín");
             listaMenu.add("Tortilla de patatas");
@@ -40,6 +42,6 @@ public class ActivityMenu extends AppCompatActivity {
             listaMenu.add("Pollo a la cerveza");
             listaMenu.add("Sopa juliana");
             listaMenu.add("Corvina al ajillo");
-            listaMenu.add("Leche, pan con aceite y fruta );
 
-                    Array Adaptor
+
+              Array Adapter =new ArrayAdapter<>( this, android.R.layout.simple_list_item_1);
